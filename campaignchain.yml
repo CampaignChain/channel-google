@@ -1,0 +1,11 @@
+
+modules:
+    campaignchain-google:
+        display_name: Google
+        description: Provides a channel for Google
+        channels:
+            - campaignchain/channel-google/campaignchain-google
+        routes: 
+            new: campaignchain_channel_google_create
+        hooks:
+            default:

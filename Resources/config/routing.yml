@@ -1,0 +1,21 @@
+# Please add the routes for your module here
+campaignchain_channel_google_create:
+    pattern: /channel/google/create
+    defaults: { _controller: CampaignchainChannelGoogleBundle:Google:create }
+    
+
+campaignchain_channel_google_login:
+    pattern: /channel/google/login
+    defaults: { _controller: CampaignchainChannelGoogleBundle:Google:login }
+
+
+campaignchain_channel_google_list_properties:
+    pattern: /channel/google/properties
+    defaults: { _controller: CampaignchainChannelGoogleBundle:Google:listProperties }
+
+
+campaignchain_channel_google_connect_location:
+    pattern: /channel/google/connect
+    defaults: { _controller: CampaignchainChannelGoogleBundle:Google:createLocation }
+
+

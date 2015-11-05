@@ -1,0 +1,42 @@
+{
+    "name": "campaignchain/channel-google",
+    "description": "Connect with Google",
+    "keywords": ["google", "campaignchain"],
+    "type": "campaignchain-channel",
+    "license": "Apache-2.0",
+    "homepage": "http://www.campaignchain.com",
+    "authors": [
+        {
+            "name": "CampaignChain Inc.",
+            "email": "info@campaignchain.com",
+            "homepage": "http://www.campaignchain.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/CampaignChain/campaignchain-ce/issues",
+        "docs": "http://doc.campaignchain.com"
+    },
+    "require": {
+        "campaignchain/core": "dev-master",
+        "campaignchain/security-authentication-client-oauth": "dev-master",
+        "google/apiclient": "1.0.*@beta"
+    },
+    "autoload": {
+        "psr-4": { "Campaignchain\\Channel\\GoogleBundle\\": "" }
+    },
+    "extra": {
+        "campaignchain": {
+            "kernel": {
+                "classes": [
+                    "Campaignchain\\Channel\\GoogleBundle\\CampaignchainChannelGoogleBundle"
+                ],
+                "routing":
+                {
+                    "name": "campaignchain_channel_google",
+                    "resource": "@CampaignchainChannelGoogleBundle/Resources/config/routing.yml",
+                    "prefix": "/"
+                }
+            }
+        }
+    }
+}
