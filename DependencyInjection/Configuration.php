@@ -1,6 +1,14 @@
 <?php
+/*
+ * This file is part of the CampaignChain package.
+ *
+ * (c) CampaignChain Inc. <info@campaignchain.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-namespace Campaignchain\Channel\GoogleBundle\DependencyInjection;
+namespace CampaignChain\Channel\GoogleBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

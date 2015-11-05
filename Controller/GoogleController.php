@@ -1,9 +1,17 @@
 <?php
+/*
+ * This file is part of the CampaignChain package.
+ *
+ * (c) CampaignChain Inc. <info@campaignchain.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-namespace Campaignchain\Channel\GoogleBundle\Controller;
+namespace CampaignChain\Channel\GoogleBundle\Controller;
 
 use CampaignChain\CoreBundle\Entity\Location;
-use Campaignchain\Location\GoogleBundle\Entity\Profile;
+use CampaignChain\Location\GoogleBundle\Entity\Profile;
 use CampaignChain\Security\Authentication\Client\OAuthBundle\Entity\Token;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -36,7 +44,7 @@ class GoogleController extends Controller
         }
         else {
             return $this->render(
-                'CampaignchainChannelGoogleBundle::index.html.twig',
+                'CampaignChainChannelGoogleBundle::index.html.twig',
                 array(
                     'page_title' => 'Connect with Google',
                     'app_id' => $application->getKey(),
@@ -80,7 +88,7 @@ class GoogleController extends Controller
         }
 
         return $this->render(
-            '@CampaignchainChannelGoogle/list_properties.html.twig',
+            '@CampaignChainChannelGoogle/list_properties.html.twig',
             array(
                 'page_title' => 'Connect with Google',
                 'profiles' => $allProfiles

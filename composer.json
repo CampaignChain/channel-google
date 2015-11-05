@@ -22,18 +22,18 @@
         "google/apiclient": "1.0.*@beta"
     },
     "autoload": {
-        "psr-4": { "Campaignchain\\Channel\\GoogleBundle\\": "" }
+        "psr-4": { "CampaignChain\\Channel\\GoogleBundle\\": "" }
     },
     "extra": {
         "campaignchain": {
             "kernel": {
                 "classes": [
-                    "Campaignchain\\Channel\\GoogleBundle\\CampaignchainChannelGoogleBundle"
+                    "CampaignChain\\Channel\\GoogleBundle\\CampaignChainChannelGoogleBundle"
                 ],
                 "routing":
                 {
                     "name": "campaignchain_channel_google",
-                    "resource": "@CampaignchainChannelGoogleBundle/Resources/config/routing.yml",
+                    "resource": "@CampaignChainChannelGoogleBundle/Resources/config/routing.yml",
                     "prefix": "/"
                 }
             }
