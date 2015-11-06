@@ -1,0 +1,27 @@
+# This file is part of the CampaignChain package.
+#
+# (c) CampaignChain Inc. <info@campaignchain.com>
+#
+# For the full copyright and license information, please view the LICENSE
+# file that was distributed with this source code.
+
+campaignchain_channel_google_create:
+    pattern: /channel/google/create
+    defaults: { _controller: CampaignChainChannelGoogleBundle:Google:create }
+    
+
+campaignchain_channel_google_login:
+    pattern: /channel/google/login
+    defaults: { _controller: CampaignChainChannelGoogleBundle:Google:login }
+
+
+campaignchain_channel_google_list_properties:
+    pattern: /channel/google/properties
+    defaults: { _controller: CampaignChainChannelGoogleBundle:Google:listProperties }
+
+
+campaignchain_channel_google_connect_location:
+    pattern: /channel/google/connect
+    defaults: { _controller: CampaignChainChannelGoogleBundle:Google:createLocation }
+
+
